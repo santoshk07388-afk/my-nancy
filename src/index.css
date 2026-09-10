@@ -1,0 +1,84 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    color: #f7f1ea;
+    background-color: #12070a;
+    overflow-x: hidden;
+  }
+}
+
+.font-serif-cormorant {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+}
+
+.font-display {
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+.font-script {
+  font-family: 'Alex Brush', cursive;
+}
+
+.font-sans-clean {
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+}
+
+/* Custom delicate scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #14080c;
+}
+::-webkit-scrollbar-thumb {
+  background: #4a1525;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #7a223c;
+}
+
+/* Glassmorphic subtle panels */
+.glass-wine {
+  background: rgba(36, 11, 19, 0.65);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(244, 114, 182, 0.12);
+}
+
+.glass-letter {
+  background: linear-gradient(145deg, rgba(253, 248, 240, 0.96) 0%, rgba(247, 238, 224, 0.94) 100%);
+  box-shadow: 0 25px 60px -15px rgba(0, 0, 0, 0.5), 0 0 40px rgba(212, 175, 55, 0.15);
+}
+
+/* Subtle glow animations */
+@keyframes pulseGlow {
+  0%, 100% {
+    opacity: 0.4;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.8;
+    transform: scale(1.05);
+  }
+}
+
+.animate-pulse-glow {
+  animation: pulseGlow 6s ease-in-out infinite;
+}
+
+/* Subtle float animation */
+@keyframes softFloat {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+.animate-float {
+  animation: softFloat 5s ease-in-out infinite;
+}

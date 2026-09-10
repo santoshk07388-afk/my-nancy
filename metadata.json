@@ -1,0 +1,6 @@
+{
+  "name": "Our Story — For You",
+  "description": "A personal memory book, honest apology, and love letter for Nancy from Santosh.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
